@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderpane_Decoration" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="marrigebooking.BookingRecordController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane id="AnchorPane" prefHeight="555.0" prefWidth="731.0">
+               <children>
+                  <ImageView fitHeight="555.0" fitWidth="751.0" opacity="0.33" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@wedding/w4.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="45.0" layoutY="35.0" prefHeight="51.0" prefWidth="179.0" text="Decoration">
+                     <font>
+                        <Font name="Georgia" size="36.0" />
+                     </font>
+                  </Label>
+                  <JFXCheckBox fx:id="requriedCheckbox" layoutX="104.0" layoutY="92.0" onAction="#Action_Redquried" text="Required">
+                     <font>
+                        <Font name="Georgia" size="13.0" />
+                     </font>
+                  </JFXCheckBox>
+                  <Label layoutX="112.0" layoutY="157.0" prefHeight="19.0" prefWidth="80.0" text="Party theme :">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="backBTN" layoutX="163.0" layoutY="448.0" mnemonicParsing="false" onAction="#BTN_back_decoration" prefHeight="39.0" prefWidth="160.0" text="Back" />
+                  <Button fx:id="PaymentBTN" layoutX="399.0" layoutY="448.0" mnemonicParsing="false" onAction="#BTN_next_payment" prefHeight="39.0" prefWidth="160.0" text="Payment" />
+                  <Label layoutX="214.0" layoutY="375.0" prefHeight="25.0" prefWidth="60.0" text="Price :">
+                     <font>
+                        <Font name="Georgia" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="priceshowlabel" layoutX="298.0" layoutY="375.0" prefHeight="25.0" prefWidth="135.0">
+                     <font>
+                        <Font name="Georgia" size="25.0" />
+                     </font></Label>
+                  <JFXComboBox fx:id="cmb_theme_party" layoutX="218.0" layoutY="154.0" onAction="#cmb_party_Action" prefHeight="25.0" prefWidth="235.0" promptText="Party Theme Special" />
+                  <JFXSpinner layoutX="9.0" layoutY="8.0" prefHeight="13.0" prefWidth="11.0" />
+                  <ImageView fx:id="img_flo_1" fitHeight="150.0" fitWidth="172.0" layoutX="63.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@wedding/f1.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXCheckBox fx:id="checkbox_1" layoutX="63.0" layoutY="199.0" onAction="#check_Action" prefHeight="19.0" prefWidth="170.0" style="-fx-background-image: url(C:\Users\hp\Documents\NetBeansProjects\MarrigeBooking\src\marrigebooking\wedding\l1.jpg);" text="Artificial" />
+                  <ImageView fx:id="img_flo_2" fitHeight="119.0" fitWidth="172.0" layoutX="261.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@wedding/f2.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXCheckBox fx:id="checkbox_2" layoutX="261.0" layoutY="199.0" onAction="#check_ac_2" prefHeight="15.0" prefWidth="145.0" text="Original" />
+                  <ImageView fx:id="img_flo_3" fitHeight="150.0" fitWidth="172.0" layoutX="456.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@wedding/f3.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXCheckBox fx:id="checkbox_3" layoutX="457.0" layoutY="199.0" onAction="#check_ac_3" prefHeight="19.0" prefWidth="170.0" style="-fx-background-image: url(C:\Users\hp\Documents\NetBeansProjects\MarrigeBooking\src\marrigebooking\wedding\l1.jpg);" text="Artificial + Original" />
+                  <Button fx:id="btn_next_flo_1" layoutX="637.0" layoutY="343.0" mnemonicParsing="false" onAction="#call_next_anc_flo_1" prefHeight="25.0" prefWidth="59.0" text="Next" />
+                  <ImageView fx:id="img_flo_4" fitHeight="150.0" fitWidth="172.0" layoutX="63.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@wedding/f4.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXCheckBox fx:id="checkbox_4" layoutX="63.0" layoutY="199.0" onAction="#check_ac_4" prefHeight="19.0" prefWidth="170.0" style="-fx-background-image: url(C:\Users\hp\Documents\NetBeansProjects\MarrigeBooking\src\marrigebooking\wedding\l1.jpg);" text="Artificial + Original" />
+                  <ImageView fx:id="img_flo_5" fitHeight="150.0" fitWidth="172.0" layoutX="261.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@wedding/f7.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXCheckBox fx:id="checkbox_5" layoutX="261.0" layoutY="199.0" onAction="#check_ac_5" prefHeight="15.0" prefWidth="145.0" text="Original" />
+                  <ImageView fx:id="img_flo_6" fitHeight="150.0" fitWidth="172.0" layoutX="456.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@wedding/f6.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXCheckBox fx:id="checkbox_6" layoutX="456.0" layoutY="199.0" onAction="#check_ac_6" prefHeight="19.0" prefWidth="170.0" style="-fx-background-image: url(C:\Users\hp\Documents\NetBeansProjects\MarrigeBooking\src\marrigebooking\wedding\l1.jpg);" text="Original" />
+                  <Button fx:id="btn_Back_flow_1" layoutX="637.0" layoutY="343.0" mnemonicParsing="false" onAction="#call_Back_anc_flo_1" prefHeight="25.0" prefWidth="59.0" text="Back" />
+                  <ImageView fx:id="img_balloon_1" fitHeight="150.0" fitWidth="172.0" layoutX="63.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@wedding/b1.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXCheckBox fx:id="checkbox_Ballon_1" layoutX="63.0" layoutY="199.0" onAction="#check_balloon_1" prefHeight="19.0" prefWidth="170.0" style="-fx-background-image: url(C:\Users\hp\Documents\NetBeansProjects\MarrigeBooking\src\marrigebooking\wedding\l1.jpg);" text="Balloon" />
+                  <ImageView fx:id="img_balloon_2" fitHeight="117.0" fitWidth="181.0" layoutX="262.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@wedding/b7.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXCheckBox fx:id="checkbox_Ballon_2" layoutX="261.0" layoutY="199.0" onAction="#check_balloon_2" prefHeight="19.0" prefWidth="170.0" style="-fx-background-image: url(C:\Users\hp\Documents\NetBeansProjects\MarrigeBooking\src\marrigebooking\wedding\l1.jpg);" text="Balloon" />
+                  <ImageView fx:id="img_balloon_3" fitHeight="150.0" fitWidth="172.0" layoutX="456.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@wedding/b6.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXCheckBox fx:id="checkbox_Ballon_3" layoutX="456.0" layoutY="199.0" onAction="#check_balloon_3_3" prefHeight="19.0" prefWidth="170.0" style="-fx-background-image: url(C:\Users\hp\Documents\NetBeansProjects\MarrigeBooking\src\marrigebooking\wedding\l1.jpg);" text="Balloon" />
+                  <ImageView fx:id="img_balloon_4" fitHeight="150.0" fitWidth="172.0" layoutX="62.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@wedding/b8.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXCheckBox fx:id="checkbox_Ballon_4" layoutX="62.0" layoutY="199.0" onAction="#check_balloon_4" prefHeight="19.0" prefWidth="170.0" style="-fx-background-image: url(C:\Users\hp\Documents\NetBeansProjects\MarrigeBooking\src\marrigebooking\wedding\l1.jpg);" text="Balloon" />
+                  <ImageView fx:id="img_balloon_5" fitHeight="150.0" fitWidth="172.0" layoutX="260.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@wedding/b3.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXCheckBox fx:id="checkbox_Ballon_5" layoutX="260.0" layoutY="199.0" onAction="#check_balloon_5" prefHeight="19.0" prefWidth="170.0" style="-fx-background-image: url(C:\Users\hp\Documents\NetBeansProjects\MarrigeBooking\src\marrigebooking\wedding\l1.jpg);" text="Balloon" />
+                  <ImageView fx:id="img_balloon_6" fitHeight="150.0" fitWidth="172.0" layoutX="455.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@wedding/b2.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXCheckBox fx:id="checkbox_Ballon_6" layoutX="455.0" layoutY="199.0" onAction="#check_balloon_6" prefHeight="19.0" prefWidth="170.0" style="-fx-background-image: url(C:\Users\hp\Documents\NetBeansProjects\MarrigeBooking\src\marrigebooking\wedding\l1.jpg);" text="Balloon" />
+                  <Button fx:id="btn_Back_Balloon" layoutX="637.0" layoutY="343.0" mnemonicParsing="false" onAction="#call_privious_balloon_list" prefHeight="25.0" prefWidth="59.0" text="Back" />
+                  <Button fx:id="btn_Next_Balloon" layoutX="637.0" layoutY="343.0" mnemonicParsing="false" onAction="#call_next_balloon_list" prefHeight="25.0" prefWidth="59.0" text="Next" />
+                  <ImageView fx:id="img_Lighting_1" fitHeight="150.0" fitWidth="172.0" layoutX="62.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@wedding/l1.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXCheckBox fx:id="checkbox_Lighting_1" layoutX="62.0" layoutY="199.0" onAction="#check_Lighting_action_1" prefHeight="19.0" prefWidth="170.0" style="-fx-background-image: url(C:\Users\hp\Documents\NetBeansProjects\MarrigeBooking\src\marrigebooking\wedding\l1.jpg);" text="Lighting  + Flowers" />
+                  <ImageView fx:id="img_Lighting_2" fitHeight="150.0" fitWidth="172.0" layoutX="261.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@wedding/l2.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXCheckBox fx:id="checkbox_Lighting_2" layoutX="261.0" layoutY="199.0" onAction="#check_Lighting_action_2" prefHeight="19.0" prefWidth="170.0" style="-fx-background-image: url(C:\Users\hp\Documents\NetBeansProjects\MarrigeBooking\src\marrigebooking\wedding\l1.jpg);" text="Lighting " />
+                  <ImageView fx:id="img_Lighting_3" fitHeight="150.0" fitWidth="172.0" layoutX="455.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@wedding/l5.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXCheckBox fx:id="checkbox_Lighting_3" layoutX="455.0" layoutY="199.0" onAction="#check_Lighting_action_3" prefHeight="19.0" prefWidth="170.0" style="-fx-background-image: url(C:\Users\hp\Documents\NetBeansProjects\MarrigeBooking\src\marrigebooking\wedding\l1.jpg);" text="Lighting + Artificial" />
+                  <ImageView fx:id="img_Lighting_4" fitHeight="150.0" fitWidth="172.0" layoutX="61.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@wedding/l6.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXCheckBox fx:id="checkbox_Lighting_4" layoutX="61.0" layoutY="199.0" onAction="#check_Lighting_action_4" prefHeight="19.0" prefWidth="170.0" style="-fx-background-image: url(C:\Users\hp\Documents\NetBeansProjects\MarrigeBooking\src\marrigebooking\wedding\l1.jpg);" text="Lighting + Artificial" />
+                  <ImageView fx:id="img_Lighting_5" fitHeight="150.0" fitWidth="172.0" layoutX="259.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@wedding/l7.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXCheckBox fx:id="checkbox_Lighting_5" layoutX="259.0" layoutY="199.0" onAction="#check_Lighting_action_5" prefHeight="19.0" prefWidth="170.0" style="-fx-background-image: url(C:\Users\hp\Documents\NetBeansProjects\MarrigeBooking\src\marrigebooking\wedding\l1.jpg);" text="Lighting + Artificial" />
+                  <ImageView fx:id="img_Lighting_6" fitHeight="150.0" fitWidth="172.0" layoutX="454.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@wedding/l8.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXCheckBox fx:id="checkbox_Lighting_6" layoutX="454.0" layoutY="199.0" onAction="#check_Lighting_action_6" prefHeight="19.0" prefWidth="170.0" style="-fx-background-image: url(C:\Users\hp\Documents\NetBeansProjects\MarrigeBooking\src\marrigebooking\wedding\l1.jpg);" text="Lighting " />
+                  <Button fx:id="btn_Next_Lighting" layoutX="637.0" layoutY="343.0" mnemonicParsing="false" onAction="#call_next_Lighting_list" prefHeight="25.0" prefWidth="59.0" text="Next" />
+                  <Button fx:id="btn_Back_Lighting_list" layoutX="637.0" layoutY="343.0" mnemonicParsing="false" onAction="#call_Back_Lighting_list" prefHeight="25.0" prefWidth="59.0" text="Back" />
+                  <JFXTextField fx:id="txt_name" labelFloat="true" layoutX="163.0" layoutY="121.0" onKeyTyped="#Auto_serach" prefHeight="25.0" prefWidth="189.0" promptText="Full Name " />
+                  <JFXTextField fx:id="txt_mobno" labelFloat="true" layoutX="399.0" layoutY="121.0" prefHeight="25.0" prefWidth="189.0" promptText="Contact Number" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
